@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-heroku-ai",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Heroku AI Node for n8n",
   "keywords": [
     "n8n-community-node-package",
