@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Heroku AI Node for n8n",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "heroku",
+    "heroku-ai",
+    "n8n"
   ],
   "license": "Apache-2.0",
   "homepage": "https://github.com/julianduque/n8n-nodes-heroku-ai",

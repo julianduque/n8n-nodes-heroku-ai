@@ -19,8 +19,8 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 Install via the n8n community nodes installation:
 
-```
-n8n-heroku-ai
+```bash
+n8n-nodes-heroku-ai
 ```
 
 ## Operations
@@ -77,9 +77,10 @@ The node supports two ways to select models:
 ### Available Models
 
 Commonly available models include:
+
 - `claude-3-5-sonnet-latest`
 - `claude-3-5-haiku`
-- `claude-3-7-sonnet` 
+- `claude-3-7-sonnet`
 - `claude-4-sonnet`
 
 ### Parameters
@@ -95,6 +96,6 @@ Commonly available models include:
 
 ## Resources
 
-* [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-* [Heroku AI Documentation](https://devcenter.heroku.com/articles/heroku-inference-api-v1-chat-completions)
-* [LangChain Integration](https://www.npmjs.com/package/heroku-langchain)
+- [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
+- [Heroku AI Documentation](https://devcenter.heroku.com/articles/heroku-inference-api-v1-chat-completions)
+- [LangChain Integration](https://www.npmjs.com/package/heroku-langchain)
