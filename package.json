@@ -1,0 +1,63 @@
+{
+  "name": "n8n-nodes-heroku-ai",
+  "version": "0.1.0",
+  "description": "Heroku AI Node for n8n",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/julianduque/n8n-heroku-ai",
+  "author": {
+    "name": "Julian Duque",
+    "email": "julianduque@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianduque/n8n-heroku-ai.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rimraf dist && tsc && npm run build:icons",
+    "build:icons": "node scripts/copy-icons.mjs",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && eslint -c eslint.config.prepublish.js nodes credentials package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/HerokuAIApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/HerokuAI/LmHerokuAi.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@types/node": "^24.0.13",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.31.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "jsonc-eslint-parser": "^2.4.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad",
+  "dependencies": {
+    "@langchain/core": "^0.3.62",
+    "heroku-langchain": "0.3.0"
+  }
+}
