@@ -12,8 +12,8 @@ importers:
         specifier: ^0.3.62
         version: 0.3.62
       heroku-langchain:
-        specifier: 0.3.0
-        version: 0.3.0(zod@3.25.76)
+        specifier: 0.3.1
+        version: 0.3.1(zod@3.25.76)
       n8n-workflow:
         specifier: '*'
         version: 1.82.0
@@ -654,8 +654,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  heroku-langchain@0.3.0:
-    resolution: {integrity: sha512-2roWlk8cLrRp47xoLrd+RskFDYiw7af4HhWxaXmDNI/x4JTubl0beLVG6PkC2G4e0SnOp0zCSBWmb9qFX9EmtQ==}
+  heroku-langchain@0.3.1:
+    resolution: {integrity: sha512-8f1mJzqnzkzU+KpidqYf5a0PShBPMvFL50oioxmdwc6zN8ZELHFvff27fj3h84eFJPFYtb3IKQqlsofPnmlaFQ==}
     engines: {node: '>=18.0.0'}
 
   ignore@5.3.2:
@@ -1980,7 +1980,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  heroku-langchain@0.3.0(zod@3.25.76):
+  heroku-langchain@0.3.1(zod@3.25.76):
     dependencies:
       '@langchain/core': 0.3.62
       zod-to-json-schema: 3.24.6(zod@3.25.76)
