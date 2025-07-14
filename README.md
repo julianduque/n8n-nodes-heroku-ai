@@ -1,4 +1,4 @@
-# n8n-heroku-ai
+# n8n-nodes-heroku-ai
 
 This is an n8n community node. It lets you use Heroku AI (Managed Inference and Agents) in your n8n workflows.
 

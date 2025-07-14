@@ -6,14 +6,14 @@
     "n8n-community-node-package"
   ],
   "license": "Apache-2.0",
-  "homepage": "https://github.com/julianduque/n8n-heroku-ai",
+  "homepage": "https://github.com/julianduque/n8n-nodes-heroku-ai",
   "author": {
     "name": "Julian Duque",
     "email": "julianduque@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/julianduque/n8n-heroku-ai.git"
+    "url": "https://github.com/julianduque/n8n-nodes-heroku-ai.git"
   },
   "engines": {
     "node": ">=20.15"
