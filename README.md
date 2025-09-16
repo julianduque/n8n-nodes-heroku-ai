@@ -40,7 +40,7 @@ To use this node, you need:
 1. **Heroku AI API Key**: Your Heroku Managed Inference API key (INFERENCE_KEY)
 2. **Base URL**: The Heroku AI API endpoint (defaults to `https://us.inference.heroku.com`)
 
-### Setting up credentials:
+### Setting up credentials
 
 1. Sign up for Heroku AI services
 2. Generate an Inference API key from your Heroku dashboard
@@ -82,6 +82,11 @@ Commonly available models include:
 - `claude-3-5-haiku`
 - `claude-3-7-sonnet`
 - `claude-4-sonnet`
+- `gpt-oss-12b`
+- `nova-lite`
+- `nova-pro`
+
+For a list of all available models, see the [Heroku AI Model Cards](https://devcenter.heroku.com/articles/heroku-inference-api-model-cards).
 
 ### Parameters
 

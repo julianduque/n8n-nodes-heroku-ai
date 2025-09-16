@@ -8,7 +8,7 @@ import type {
 	ILoadOptionsFunctions,
 } from 'n8n-workflow';
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
-import { HerokuMia } from 'heroku-langchain';
+import { ChatHeroku } from 'heroku-langchain';
 import { getConnectionHintNoticeField } from '../utils';
 
 export class LmHerokuAi implements INodeType {
@@ -205,6 +205,9 @@ export class LmHerokuAi implements INodeType {
 						{ name: 'claude-3-5-haiku', value: 'claude-3-5-haiku' },
 						{ name: 'claude-3-7-sonnet', value: 'claude-3-7-sonnet' },
 						{ name: 'claude-4-sonnet', value: 'claude-4-sonnet' },
+						{ name: 'gpt-oss-12b', value: 'gpt-oss-12b' },
+						{ name: 'nova-lite', value: 'nova-lite' },
+						{ name: 'nova-pro', value: 'nova-pro' },
 					];
 				}
 			},
@@ -273,7 +276,7 @@ export class LmHerokuAi implements INodeType {
 			timeout?: number;
 		};
 
-		const herokuMia = new HerokuMia({
+		const herokuAi = new ChatHeroku({
 			model: modelName,
 			temperature,
 			maxTokens,
@@ -285,7 +288,7 @@ export class LmHerokuAi implements INodeType {
 		});
 
 		return {
-			response: herokuMia,
+			response: herokuAi,
 		};
 	}
 }
